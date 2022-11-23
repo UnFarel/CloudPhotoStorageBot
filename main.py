@@ -27,6 +27,7 @@ async def download_photo(message: types.Message, bot: Bot):
         destination=f"/photo_storage/{message.photo[-1].file_id}.jpg"
     )
 
+#sdasdasdasd
 
 def main() -> None:
     bot = Bot(TOKEN, parse_mode="HTML")
