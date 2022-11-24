@@ -20,14 +20,13 @@ async def command_start_handler(message: Message) -> None:
     await message.answer(f"Привет, <b>{message.from_user.full_name}</b>, загрузи фото)")
 
 
-@dp.message(content_types=[types.ContentType.PHOTO])
+@dp.message(content_types="text")
 async def download_photo(message: types.Message, bot: Bot):
     await bot.download(
         message.photo[-1],
         destination=f"/photo_storage/{message.photo[-1].file_id}.jpg"
     )
 
-#sdasdasdasd
 
 def main() -> None:
     bot = Bot(TOKEN, parse_mode="HTML")
