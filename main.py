@@ -7,7 +7,7 @@ from aiogram.types import Message
 import aiohttp
 
 
-TOKEN = "5542040375:AAHpm4vEAHGnGW7Kj9bw5ACuxmqi4lDOVkY"
+TOKEN = ""
 dp = Dispatcher()
 
 logger = logging.getLogger(__name__)
